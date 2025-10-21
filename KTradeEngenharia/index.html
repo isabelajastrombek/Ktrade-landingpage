@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Ktrade Engenharia — Soluções em Climatização, Elétrica e Automação</title>
-    <link rel="icon" href="KtradeIcon.ico" type="image/x-icon">
+    <link rel="icon" href="images/KtradeIcon.ico" type="image/x-icon">
 
     <!-- SEO & Open Graph -->
-    <meta name="description"
-        content="Ktrade Engenharia — Soluções completas em Climatização, Elétrica, Automação e Manutenção.">
+    <meta name="description" content="Ktrade Engenharia — Soluções completas em Climatização, Elétrica, Automação e Manutenção.">
     <meta name="keywords" content="Climatização, Engenharia Elétrica, Automação, Manutenção, Curitiba">
     <meta property="og:title" content="Ktrade Engenharia — Soluções em Climatização, Elétrica e Automação">
     <meta property="og:description" content="Soluções completas em Climatização, Elétrica, Automação e Manutenção.">
@@ -18,317 +16,252 @@
     <meta property="og:url" content="https://www.ktradeengenharia.com">
 
     <!-- Fonts & Bootstrap -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --ktrade-blue: #0FBEF9;
-            --ktrade-blue-dark: #1F82BF;
-            --ktrade-dark: #112234;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--ktrade-dark);
-        }
-
-        .btn-ktrade {
-            background: var(--ktrade-blue-dark);
-            padding: 9px 16px;
-            color: #fff;
-            font-weight: 400;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.0);
-            border: none;
-            transition: background 0.3s ease;
-        }
-
-        .btn-ktrade:hover {
-            background: var(--ktrade-blue);
-            color: #fff;
-        }
-
-        .ktrade-icon,
-        .custom-icon {
-            width: 30px;
-            height: auto;
-        }
-
-        .custom-icon {
-            padding: 6px;
-        }
-
-        .hero {
-            position: relative;
-            min-height: 95vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url("bg.jpeg") center center / cover no-repeat;
-            color: #fff;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(rgba(31, 130, 191, 0.4), rgba(17, 34, 52, 0.8));
-            z-index: 1;
-        }
-
-        .hero .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .quem-somos-imagem {
-            height: 250px;
-            width: auto;
-        }
-
-        .card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
-    </style>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
-    <!-- Navbar -->
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0"> <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: var(--ktrade-dark);">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
-                <img src="KTradeIcone.svg" alt="Ícone da Ktrade Engenharia" class="img-fluid ktrade-icon">
-                Ktrade Engenharia
-            </a>
-            <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container"> <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#"> <img
+                    src="images/KTradeIcone.svg" alt="Ícone da Ktrade Engenharia" class="img-fluid ktrade-icon"> Ktrade
+                Engenharia </a> <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-5">
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Quem somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Segmentos de Atuação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Quem somos</a></li>
                     <li class="nav-item"><a class="btn btn-ktrade ms-2 rounded-1" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero -->
+    </nav> <!-- Hero -->
     <header class="hero text-center">
         <div class="container" style="margin-top: 400px;">
             <h1 class="fw-bold display-5 mb-3">Soluções inteligentes em climatização.</h1>
             <p class="lead mb-5">Projetos, instalações e manutenção de sistemas de climatização com eficiência,
-                tecnologia e confiabilidade.</p>
-            <a href="#contato" class="btn btn-ktrade btn-lg me-3 rounded-1">Solicitar orçamento</a>
-            <a href="#servicos" class="btn btn-outline-light btn-lg rounded-1">Nossos serviços</a>
+                tecnologia e confiabilidade.</p> <a href="#contato"
+                class="btn btn-ktrade btn-lg me-3 rounded-1">Solicitar orçamento</a> <a href="#servicos"
+                class="btn btn-outline-light btn-lg rounded-1">Nossos serviços</a>
         </div>
-    </header>
-
-    <!-- Quem somos -->
-    <section id="sobre" class="bg-white text-dark py-5">
-        <div class="container">
+    </header> <!-- Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container fade-section">
+            <h2 class="fw-bold mb-4 text-start">Nossos serviços</h2>
+            <div class="row g-4 mb-3">
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/projetista.png" alt="Projetos de Climatização">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Desenvolvimento e Execução de Projetos de Climatização (HVAC).</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/instalacao.jpeg" alt="Automação de Climatização">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Instalação e Montagem de Sistemas de Ar Condicionado (Central, VRF,
+                                Split, etc.).</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/manutencao.jpeg" alt="Infraestrutura Elétrica">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Manutenção Preventiva e Corretiva, com foco total no PMOC (Plano de
+                                Manutenção, Operação e Controle).</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/consultoria.jpeg" alt="Projetos de Climatização">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Consultoria e Laudos Técnicos especializados.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/automacao.jpeg" alt="Automação de Climatização">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Integração de sistemas automatizados de climatização.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/eletrica.jpeg" alt="Infraestrutura Elétrica">
+                        <div class="p-4">
+                            <h5 class="fw-semibold">Infraestrutura elétrica dedicada a sistemas de climatização.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Segmentos de Atuação -->
+    <section id="portfolio" class="py-5 bg-white">
+        <div class="container fade-section">
+            <h2 class="fw-bold mb-4 text-start">Segmentos de Atuação</h2>
+            <p class="mb-5">A Ktrade Engenharia desenvolve soluções de climatização perfeitamente alinhadas às
+                exigências e desafios de cada setor:</p>
+            <div class="row g-4">
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/comercial.jpeg" alt="Instalação comercial" loading="lazy" class="img-fluid">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-primary mb-3 ktrade-blue">Comercial</h5>
+                            <p>Projetos e execução que asseguram o conforto térmico, qualidade do ar e segurança em
+                                ambientes de grande circulação (shoppings, lojas, aeroportos) e em ambientes
+                                corporativos (escritórios e sedes empresariais).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/industrial.jpeg" alt="Projeto industrial" loading="lazy" class="img-fluid">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-primary mb-3 ktrade-blue">Industrial</h5>
+                            <p>Soluções robustas para controle térmico em linhas de produção, áreas técnicas ou data
+                                centers. Nosso objetivo é otimizar a produtividade operacional e prolongar a
+                                durabilidade dos equipamentos e maquinários.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1"> <img
+                            src="images/hospitalar.jpeg" alt="Projeto hospitalar" loading="lazy" class="img-fluid">
+                        <div class="p-4">
+                            <h5 class="fw-bold text-primary mb-3 ktrade-blue">Hospitalar</h5>
+                            <p>Sistemas de climatização e renovação do ar que atendem aos rigorosos requisitos de
+                                higienização, controle de partículas e pressão negativa/positiva, essenciais para a
+                                segurança de pacientes e equipes médicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Quem somos -->
+    <section id="sobre" class="bg-light text-dark py-5">
+        <div class="container fade-section">
             <div class="row text-center text-md-start align-items-center">
                 <div class="col-md-6">
                     <h2 class="fw-bold mb-4 text-start">Quem somos</h2>
-                    <p class="text-start">
-                        A Ktrade Engenharia possui ampla experiência na realização de projetos e execução de sistemas de
-                        climatização, elétrica, exaustão e renovação de ar para ambientes industriais, comerciais e
-                        hospitalares. Atuamos desde o planejamento até a implementação, sempre buscando soluções
-                        eficientes, seguras e sob medida.
-                    </p>
+                    <p class="text-start"> Fundada em <b>2014</b>, a <b>Ktrade Engenharia</b> é uma empresa dedicada a
+                        oferecer soluções completas, inteligentes e de alta performance em sistemas de climatização,
+                        ventilação e renovação do ar. Com uma década de atuação, nosso propósito é garantir o conforto
+                        térmico, a qualidade do ar e a eficiência energética para <b>ambientes comerciais, industriais e
+                            hospitalares</b>. </p>
+                    <h5 class="fw-bold text-start">Nossa Missão</h5>
+                    <p class="text-start">Garantir a excelência na qualidade do ar e no conforto térmico dos nossos
+                        clientes, através de projetos de engenharia inovadores, execução rigorosa e serviços de
+                        manutenção especializados, sempre com foco na sustentabilidade, redução de custos e na
+                        otimização de recursos.</p>
+                    <h5 class="fw-bold text-start">O que nos Move</h5>
+                    <p class="text-start"><b>Excelência Técnica:</b> Contamos com uma equipe de engenheiros e técnicos
+                        altamente qualificados e em constante atualização. Estamos preparados para aplicar as mais
+                        recentes tecnologias do setor, sempre em estrita conformidade com todas as normas e legislações
+                        vigentes.</p>
+                    <p class="text-start"><b>Comprometimento:</b> Assumimos a responsabilidade pela entrega de sistemas
+                        que funcionam perfeitamente, garantindo total aderência ao prazo e ao orçamento acordados.</p>
+                    <p class="text-start"><b>Soluções Personalizadas:</b> Entendemos que cada projeto é único. Por isso,
+                        oferecemos análises detalhadas e desenvolvemos soluções sob medida que se encaixam perfeitamente
+                        nas necessidades específicas de cada cliente, do pequeno escritório ao grande complexo
+                        industrial.</p>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="KTradeLogoTipo.png" alt="Logo Ktrade Engenharia"
-                        class="img-fluid rounded-1 quem-somos-imagem" loading="lazy">
+                <div class="col-md-6 flex align-items-center text-center"> <img src="images/project.jpg"
+                        alt="Logo Ktrade Engenharia" class="img-fluid rounded-1 quem-somos-imagem" loading="lazy">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Serviços -->
-    <section id="servicos" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="fw-bold mb-4 text-start">Nossos serviços</h2>
-            <p class="mb-5">A Ktrade Engenharia oferece soluções técnicas sob medida para diferentes segmentos,
-                garantindo eficiência, segurança e qualidade.</p>
-            <div class="row g-4">
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="climatizacao.jpeg"
-                            alt="Projetos de Climatização">
-                        <div class="p-4">
-                            <h5>Climatização</h5>
-                            <p>Desenvolvimento e execução de sistemas de ar-condicionado, ventilação e renovação de ar,
-                                projetados conforme as especificações e necessidades de cada ambiente.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="automacao.jpeg"
-                            alt="Automação de Climatização">
-                        <div class="p-4">
-                            <h5>Automação</h5>
-                            <p>Integração de sistemas automatizados de climatização, possibilitando o controle
-                                inteligente de temperatura, vazão e consumo energético.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="eletrica.jpeg"
-                            alt="Infraestrutura Elétrica">
-                        <div class="p-4">
-                            <h5>Elétrica</h5>
-                            <p>Infraestrutura elétrica dedicada a sistemas de climatização, garantindo segurança,
-                                eficiência e operação contínua dos equipamentos.</p>
-                        </div>
+        </div> <!-- Números -->
+        <div class="text-center mt-5 fade-section">
+            <h3 class="fw-bold mb-4">Números que Constroem Confiança</h3>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <h2 class="fw-bold ktrade-blue">23.200 TR</h2>
+                        <p class="mb-0">Toneladas de Refrigeração instaladas em todo o país.</p>
                     </div>
                 </div>
             </div>
+        </div> <!-- Encerramento -->
+        <div class="text-center mt-5 fade-section">
+            <p class="lead mb-2 fw-semibold">Ktrade Engenharia: Conte conosco para um espaço mais confortável, com
+                excelente qualidade do ar e máxima economia.</p>
         </div>
-    </section>
-
-    <!-- Experiência -->
-    <section id="portfolio" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="fw-bold mb-4 text-start">Experiência</h2>
-            <p class="mb-5">Com uma trajetória consolidada, a Ktrade Engenharia já participou de grandes obras
-                industriais e comerciais, entregando qualidade e inovação em cada projeto.</p>
-            <div class="row g-4">
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="comercial.jpeg" alt="Instalação comercial" loading="lazy" class="img-fluid">
-                        <div class="p-4">
-                            <h5>Comercial</h5>
-                            <p>Projetos e instalações que asseguram conforto térmico e qualidade do ar em espaços
-                                corporativos e de atendimento ao público.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="industrial.jpeg" alt="Projeto industrial"
-                            loading="lazy" class="img-fluid">
-                        <div class="p-4">
-                            <h5>Industrial</h5>
-                            <p>Soluções robustas para controle térmico em linhas de produção e áreas técnicas,
-                                otimizando processos e produtividade.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex">
-                    <div class="card card-hover border-0 shadow-sm overflow-hidden w-100 rounded-1">
-                        <img src="hospitalar.jpeg" alt="Projeto hospitalar"
-                            loading="lazy" class="img-fluid">
-                        <div class="p-4">
-                            <h5>Hospitalar</h5>
-                            <p>Sistemas de climatização e renovação de ar que atendem rigorosos requisitos de higiene e
-                                controle ambiental.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="py-5 bg-light">
-        <div class="container">
+    </section> <!-- Contato -->
+    <section id="contato" class="py-5 bg-white">
+        <div class="container fade-section">
             <div class="row text-center text-md-start align-items-center">
                 <div class="col-md-6">
                     <h2 class="fw-bold mb-4 text-start">Contato</h2>
-                    <p class="mb-4 text-start">
-                        Conte com a Ktrade Engenharia para desenvolver soluções de climatização eficientes e sob medida
-                        para o seu ambiente.
-                        Entre em contato e descubra como podemos transformar seu espaço com tecnologia, conforto e
-                        qualidade.
-                    </p>
+                    <p class="mb-4 text-start"> Conte com a Ktrade Engenharia para desenvolver soluções de climatização
+                        eficientes e sob medida para o seu ambiente. Entre em contato e descubra como podemos
+                        transformar seu espaço com tecnologia, conforto e qualidade. </p>
                     <form class="bg-white p-4 shadow-sm mb-4 rounded-1" style="max-width: 600px;"
                         onsubmit="event.preventDefault(); alert('Formulário simulado — implementar backend para envio.');">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" id="email" class="form-control" placeholder="seu@email.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label">Telefone</label>
-                            <input type="text" id="telefone" class="form-control" placeholder="(00) 00000-0000">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea id="mensagem" class="form-control" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-ktrade w-100 rounded-1">Enviar</button>
+                        <div class="mb-3"> <label for="nome" class="form-label">Nome</label> <input type="text"
+                                id="nome" class="form-control" placeholder="Seu nome" required> </div>
+                        <div class="mb-3"> <label for="email" class="form-label">E-mail</label> <input type="email"
+                                id="email" class="form-control" placeholder="seu@email.com" required> </div>
+                        <div class="mb-3"> <label for="telefone" class="form-label">Telefone</label> <input type="text"
+                                id="telefone" class="form-control" placeholder="(00) 00000-0000"> </div>
+                        <div class="mb-3"> <label for="mensagem" class="form-label">Mensagem</label> <textarea
+                                id="mensagem" class="form-control" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea> </div> <button type="submit"
+                            class="btn btn-ktrade w-100 rounded-1">Enviar</button>
                     </form>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="email.jpg" alt="Engenheiro trabalhando em projeto elétrico" class="img-fluid rounded-1"
-                        loading="lazy">
-                </div>
+                <div class="col-md-6 text-center"> <img src="images/email.jpg" alt="Engenheiro trabalhando em projeto elétrico"
+                        class="img-fluid rounded-1" loading="lazy"> </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
+    </section> <!-- Footer -->
     <footer class="text-white py-4" style="background-color: var(--ktrade-dark);">
         <div class="container text-center text-md-start">
             <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0"> <img src="images/KTradeLogoTipo.png" alt="Logo Ktrade Engenharia"
+                        class="img-fluid w-50" loading="lazy"> </div>
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <img src="KTradeLogoTipo.png" alt="Logo Ktrade Engenharia" class="img-fluid w-50" loading="lazy">
+                    <h5 class="mb-2 d-flex align-items-center"> <strong>Comercial:</strong>&nbsp; </h5>
+                    <p class="mb-2 d-flex align-items-center"> <img class="custom-icon" src="images/telefone.png" alt="">
+                        <strong>Tel./Whatsapp:</strong>&nbsp; <a href="https://wa.me/5541991028568"
+                            class="text-white text-decoration-underline" target="_blank">(41) 99102-8568</a> </p>
+                    <p class="mb-2 d-flex align-items-center"> <img class="custom-icon" src="images/envelope.png" alt="">
+                        <strong>E-mail:</strong>&nbsp; <a href="mailto:contato@ktradeengenharia.com.br"
+                            class="text-white text-decoration-underline">contato@ktradeengenharia.com.br</a> </p> <br>
+                    <h5 class="mb-2 d-flex align-items-center"> <strong>Financeiro:</strong>&nbsp; </h5>
+                    <p class="mb-2 d-flex align-items-center"> <img class="custom-icon" src="images/telefone.png" alt="">
+                        <strong>Tel./Whatsapp:</strong>&nbsp; <a href="https://wa.me/5541999105671"
+                            class="text-white text-decoration-underline" target="_blank">(41) 99910-5671</a> </p>
+                    <p class="mb-2 d-flex align-items-center"> <img class="custom-icon" src="images/envelope.png" alt="">
+                        <strong>E-mail:</strong>&nbsp; <a href="mailto:financeiro@ktradeengenharia.com.br"
+                            class="text-white text-decoration-underline">financeiro@ktradeengenharia.com.br</a> </p>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <p class="mb-2 d-flex align-items-center">
-                        <img class="custom-icon" src="telefone.png" alt="">
-                        <strong>Financeiro:</strong>&nbsp;(41) 9910-5671
-                    </p>
-                    <p class="mb-2 d-flex align-items-center">
-                        <img class="custom-icon" src="telefone.png" alt="">
-                        <strong>Comercial/Engenharia:</strong>&nbsp;(41) 99102-8568
-                    </p>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <p class="mb-2 d-flex align-items-center">
-                        <img class="custom-icon" src="envelope.png" alt="">
-                        <strong>E-mail:</strong>&nbsp;
-                        <a href="mailto:ktrade.eletro@gmail.com"
-                            class="text-white text-decoration-underline">ktrade.eletro@gmail.com</a>
-                    </p>
-                    <p class="d-flex align-items-center">
-                        <img class="custom-icon" src="instagram.png" alt="">
-                        <strong>Instagram:</strong>&nbsp;
-                        <a href="https://www.instagram.com/ktradeengenharia/" target="_blank"
-                            class="text-white text-decoration-underline">@ktradeengenharia</a>
-                    </p>
+                    <h5 class="mb-2 d-flex align-items-center"> <strong>Redes Sociais:</strong> </h5>
+                    <p class="d-flex align-items-center"> <img class="custom-icon" src="images/instagram.png" alt="">
+                        <strong>Instagram:</strong>&nbsp; <a href="https://www.instagram.com/ktradeengenharia/"
+                            target="_blank" class="text-white text-decoration-underline">@ktradeengenharia</a> </p>
+                    <p class="d-flex align-items-center"> <img class="custom-icon" src="images/linkedin.png" alt="">
+                        <strong>Linkedin:</strong>&nbsp; <a href="" target="_blank"
+                            class="text-white text-decoration-underline">@ktradeengenharia</a> </p> <br>
+                    <h5 class="mb-2"><strong>Endereço:</strong></h5>
+                    <p>Tatuquara, Curitiba – PR</p>
+                    <p>CEP: 81480-335</p>
                 </div>
             </div>
             <p class="mt-4 mb-0 text-center">© Ktrade Engenharia — Todos os direitos reservados</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
