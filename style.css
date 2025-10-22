@@ -39,7 +39,7 @@ body {
 
 .hero {
     position: relative;
-    min-height: 95vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -65,6 +65,9 @@ body {
 .hero .hero-content {
     position: relative;
     z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 40vh;
     padding-bottom: 10vh;
 }
 
@@ -98,7 +101,8 @@ body {
 }
 
 .card:hover .img-overlay::after {
-    opacity: 1; /* aparece só ao passar o mouse */
+    opacity: 1;
+    /* aparece só ao passar o mouse */
 }
 
 .card-hover:hover {
